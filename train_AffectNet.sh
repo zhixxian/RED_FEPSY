@@ -7,7 +7,7 @@ for RANK_ALPHA in 0.2 0.3 0.4 0.5 0.6 1
 do
     EXP_NAME=affectnet_${focal_gamma}_${rank_margin}_${RANK_ALPHA}
 
-    python train_Affect.py \
+    python train_AffectNet.py \
         --wandb=${EXP_NAME} \
         --rank_margin=$rank_margin \
         --rank_alpha=$RANK_ALPHA \
